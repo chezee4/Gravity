@@ -1,0 +1,121 @@
+.works {
+  width: 100%;
+  &__container {
+    padding-inline: 10px;
+  }
+  &__marcker {
+    display: inline-block;
+    margin-bottom: 50px;
+  }
+  &__title {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: -1px;
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    column-gap: 30px;
+    .menu-sort {
+      display: flex;
+      column-gap: 40px;
+      align-items: center;
+      &__item {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.71;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        opacity: 0.40000001192092896;
+        cursor: pointer;
+        &:focus,
+        &:active {
+          color: #1434e1;
+        }
+      }
+    }
+  }
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 350px);
+    grid-auto-rows: 450px;
+    gap: 30px;
+    justify-content: center;
+    .works__item {
+      position: relative;
+      transition: all 0.3s linear;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-image: url("../../img/icon/Play-Button.svg");
+        width: 65px;
+        height: 65px;
+        transition: all 0.5s linear;
+        z-index: 5;
+        opacity: 0;
+      }
+      &:hover {
+        transform: translateY(-5%);
+        &::before {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 991px) {
+  .works__header {
+    .menu-sort {
+      column-gap: 20px;
+      &__item {
+        letter-spacing: 3px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .works__header {
+    margin-bottom: 50px;
+
+    .menu-sort {
+      width: 100%;
+      justify-content: flex-end;
+      &__item {
+        font-size: 13px;
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  .works {
+    &__title {
+      font-size: 32px;
+    }
+    .works__header {
+      .menu-sort {
+        flex-wrap: wrap;
+        row-gap: 15px;
+        &__item {
+          font-size: 12px;
+          letter-spacing: 2px;
+        }
+      }
+    }
+    &__items {
+      grid-template-columns: repeat(auto-fit, 300px);
+      grid-auto-rows: 350px;
+    }
+  }
+}

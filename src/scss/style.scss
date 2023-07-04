@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&display=swap");
+@import "mixin";
+@import "variables";
+@import "dark";
+@import "global";
+
+@import "reset";
+@import "header";
+
+@import "./main/reach-media";
+@import "./main/post";
+@import "./main/service";
+@import "./main/benefits";
+@import "./main/catalog-of-works";

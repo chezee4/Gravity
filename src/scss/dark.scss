@@ -1,0 +1,136 @@
+$bg-color: #111111;
+$text-color: #545964;
+$text-light: #5b606b;
+$subtext-color: #6a6f78;
+$overlay-color: #383b4d;
+$surface-color: #27292d;
+body.dark-page {
+  background-color: $bg-color;
+  & .header {
+    &__logo .logo {
+      filter: invert(0.8);
+    }
+    &__search {
+      &-input {
+        background-color: $bg-color;
+        color: $text-color;
+      }
+      .search-icon {
+        filter: invert(0.8);
+      }
+    }
+    &__burger-line,
+    &__burger::before {
+      border-radius: 5px;
+      background-color: $text-color;
+    }
+  }
+  & .reach-media {
+    &__title {
+      color: $text-color;
+    }
+    &__button {
+      background-color: $surface-color;
+      color: #484c62;
+      transition: all 0.3s linear;
+      &:hover {
+        background-color: $overlay-color;
+        color: #606487;
+      }
+    }
+    &__video {
+      box-shadow: -5px 10px 47px 0px #dcdcdc8c;
+    }
+    &__pagination {
+      hr {
+        background-color: $surface-color;
+      }
+    }
+    .pagination__current,
+    .pagination__end {
+      color: $text-color;
+    }
+    &__subtitle {
+      color: $subtext-color;
+    }
+  }
+  .post {
+    &__title {
+      color: $text-color;
+    }
+    &__subtitle {
+      color: $subtext-color;
+      opacity: 1;
+    }
+    .user {
+      &__container-avatar {
+        margin-right: 35px;
+        max-width: 65px;
+        max-height: 65px;
+        img {
+          border-radius: 50%;
+        }
+      }
+      &__full-name {
+        color: $text-color;
+      }
+      &__company {
+        color: $subtext-color;
+      }
+    }
+  }
+  .service {
+    &__title {
+      color: $text-color;
+    }
+    &__list {
+      color: $subtext-color;
+    }
+    &__marcker {
+      color: $text-color;
+      opacity: 0.4;
+    }
+  }
+  .benefits {
+    &__title {
+      color: $text-color;
+    }
+    &__subtitle {
+      color: $subtext-color;
+    }
+    .result__text,
+    .design__text {
+      color: $text-light;
+    }
+    .result__icon-container,
+    .design__icon-container {
+      img {
+        filter: invert(1);
+      }
+    }
+    .benefits__photos-container img {
+      filter: brightness(0.7);
+    }
+  }
+  .works {
+    &__marcker {
+      color: $text-color;
+      opacity: 0.4;
+    }
+    &__title {
+      color: $text-color;
+    }
+    .menu-sort {
+      &__item {
+        color: $subtext-color;
+      }
+    }
+    &__items {
+      .works__item {
+        img {
+          filter: brightness(0.8);
+        }
+      }
+    }
+  }
+}

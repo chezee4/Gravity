@@ -1,0 +1,25 @@
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  font-family: "Fira Sans", sans-serif;
+  transition: all 0.6s linear;
+}
+.container {
+  max-width: 1135px;
+  margin: 0 auto;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 auto;
+}
+.footer {
+  color: #ffff;
+  min-height: 21.0909em;
+}

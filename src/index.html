@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html', {
+    "title": "Главная"
+  })
+<body>
+    <div class="wrapper">
+        @@include('html/header.html',{})
+        <main class="main">
+          @@include('html/main/reach-media.html'.{})
+          @@include('html/main/post.html',{})
+          @@include('html/main/service.html',{})
+          @@include('html/main/benefits.html',{})
+          @@include('html/main/catalog-of-works.html',{})
+        </main>
+        @@include('html/footer.html',{})
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+</html>
