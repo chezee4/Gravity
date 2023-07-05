@@ -1,14 +1,15 @@
 .service {
-  padding-inline: 25px;
   width: 100%;
   margin-bottom: 180px;
   &__container {
     margin-top: 30px;
+    padding-inline: 25px;
   }
   &__content {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-block: 55px;
   }
   &__container-title {
     max-width: 533px;
@@ -74,6 +75,9 @@
     &__list {
       font-size: 16px;
       line-height: 30px;
+    }
+    &__silder-wrapper{
+      padding-left: 0;
     }
   }
 }

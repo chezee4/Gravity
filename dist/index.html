@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-
     <link rel="stylesheet" href="css/style.min.css">
     <title>Главная</title>
     
@@ -94,9 +93,9 @@
         </div>
     </div>
 </section>
-          <section class="main__service service container">
-    <span class="service__marcker">— Services</span>
-    <div class="service__container">
+          <section class="main__service service">
+    <div class="service__container container">
+        <span class="service__marcker">— Services</span>
         <div class="service__content">
             <div class="service__container-title">
                 <h2 class="service__title">
@@ -116,17 +115,45 @@
                 </ul>
             </div>
         </div>
-        <!-- <div class="service__slider">
-            <div class="swiper-container" >
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="img/Placeholder/1.jpg" alt=""></div>
-                    <div class="swiper-slide" ><img src="img/Placeholder/2.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="img/Placeholder/1.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="img/Placeholder/2.jpg" alt=""></div>
-                    <div class="swiper-slide" ><img src="img/Placeholder/1.jpg" alt=""></div>
+    </div>
+    <div class="service__silder-wrapper">
+        <!-- Slider main container -->
+        <div class="swiper service__slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="service__slider-item">
+                        <img src="img/Placeholder/1.jpg" alt="Slides">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="service__slider-item">
+                        <img src="img/Placeholder/1.jpg" alt="Slides">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="service__slider-item">
+                        <img src="img/Placeholder/1.jpg" alt="Slides">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="service__slider-item">
+                        <img src="img/Placeholder/1.jpg" alt="Slides">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="service__slider-item">
+                        <img src="img/Placeholder/1.jpg" alt="Slides">
+                    </div>
                 </div>
             </div>
-        </div> -->
+            <div class=" swiper-navigation service__slider-navigation">
+                <button class="slider__button slider__button-prev"></button>
+                <button class="slider__button slider__button-next"></button>
+            </div>
+        </div>
+        
     </div>
 </section>
           <section class="main__benefits benefits">
@@ -184,12 +211,103 @@
             <div class="works__item" data-order="5"><img src="img/Placeholder/6.jpg" alt="item"></div>
             <div class="works__item" data-order="6"><img src="img/Placeholder/3.jpg" alt="item"></div>
         </div>
+        <div class="works__footer">
+            <p class="works__subtitle">
+                It picks up the words on the page and displays ads that are similar to those words. 
+                Then when someone either 
+                performs an action or clicks on your page you will get paid.
+            </p>
+            <button class="works__button">see our works</button>
+        </div>
+    </div>
+</section>
+          <section class="main__team team">
+    <div class="team__container container">
+        <span class="team__marcker">— Testimonials</span>
+        <div class="team__wrapper-slider">
+             <!-- Slider main container -->
+        <div class="swiper team__slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <article class="person__slider-item person">
+                        <div class="person__content">
+                            <div class="person__text">
+                                <h4 class="person__title">
+                                    "Professionals in their craft! All 
+                                    products were super great with strong attention to details, 
+                                    and overall vibe"
+                                </h4>
+                                <div class="person__info">
+                                    <span class="person__full-name">Polina Kuzina</span>
+                                    <span class="person__company">Manager at Craftwork</span>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="person__container">
+                            <div class="person__container-photo">
+                                <img src="img/avatar/Elizabeth.jpg" alt="Elizabeth">
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="swiper-slide">
+                    <article class="person__slider-item person">
+                        <div class="person__content">
+                            <div class="person__text">
+                                <h4 class="person__title">
+                                    "Professionals in their craft! All 
+                                    products were super great with strong attention to details, 
+                                    and overall vibe"
+                                </h4>
+                                <div class="person__info">
+                                 <span class="person__full-name">Polina Kuzina</span>
+                                 <span class="person__company">Manager at Craftwork</span>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="person__container">
+                            <div class="person__container-photo">
+                                <img src="img/avatar/Elizabeth.jpg" alt="Elizabeth">
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="swiper-slide">
+                    <article class="person__slider-item person">
+                        <div class="person__content">
+                            <div class="person__text">
+                                <h4 class="person__title">
+                                    "Professionals in their craft! All 
+                                    products were super great with strong attention to details, 
+                                    and overall vibe"
+                                </h4>
+                                <div class="person__info">
+                                    <span class="person__full-name">Polina Kuzina</span>
+                                    <span class="person__company">Manager at Craftwork</span>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="person__container">
+                            <div class="person__container-photo">
+                                <img src="img/avatar/Elizabeth.jpg" alt="Elizabeth">
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="team__slider-navigation">
+                <button class="slider__button team-slider__button-prev"></button>
+                <button class="slider__button team-slider__button-next"></button>
+            </div>
+        </div>
+        </div>
     </div>
 </section>
         </main>
         <footer class="footer">fgee</footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="js/app.min.js"></script>
 </body>
 </html>

@@ -6,6 +6,9 @@ $overlay-color: #383b4d;
 $surface-color: #27292d;
 body.dark-page {
   background-color: $bg-color;
+  .slider__button {
+    filter: brightness(0.4);
+  }
   & .header {
     &__logo .logo {
       filter: invert(0.8);
@@ -123,6 +126,11 @@ body.dark-page {
     .menu-sort {
       &__item {
         color: $subtext-color;
+        &:focus,
+        &:active,
+        &:hover {
+          color: #ce9416;
+        }
       }
     }
     &__items {
@@ -130,6 +138,38 @@ body.dark-page {
         img {
           filter: brightness(0.8);
         }
+      }
+    }
+    &__footer {
+      .works__subtitle {
+        color: $subtext-color;
+      }
+      .works__button {
+        background-color: $surface-color;
+        color: #484c62;
+        transition: all 0.3s linear;
+        &:hover {
+          background-color: $overlay-color;
+          color: #606487;
+        }
+      }
+    }
+  }
+  .team {
+    &__marcker {
+      color: $text-color;
+      opacity: 0.4;
+    }
+    .person {
+      &__title {
+        color: $text-color;
+      }
+      &__full-name {
+        color: $subtext-color;
+      }
+      &__company {
+        color: $text-light;
+        opacity: 0.5;
       }
     }
   }
