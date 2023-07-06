@@ -212,17 +212,28 @@ body.dark-page {
     .menu {
       &__item {
         color: $subtext-color;
+        transition: all 0.3s linear;
+        &:hover,
+        &:focus {
+          color: rgb(202, 167, 91);
+        }
       }
     }
     .footer__container-link {
       .options {
         &__item {
           color: $subtext-color;
+          transition: all 0.3s linear;
+          &:hover,
+          &:focus {
+            color: rgb(202, 167, 91);
+          }
         }
       }
       .list-link {
         &__message {
           img {
+            transition: all 0.3s linear;
             filter: brightness(1.4);
           }
           &:hover,

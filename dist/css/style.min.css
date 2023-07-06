@@ -968,11 +968,20 @@ body.dark-page .footer__form .form__button {
 }
 body.dark-page .footer .menu__item {
   color: #6a6f78;
+  transition: all 0.3s linear;
+}
+body.dark-page .footer .menu__item:hover, body.dark-page .footer .menu__item:focus {
+  color: rgb(202, 167, 91);
 }
 body.dark-page .footer .footer__container-link .options__item {
   color: #6a6f78;
+  transition: all 0.3s linear;
+}
+body.dark-page .footer .footer__container-link .options__item:hover, body.dark-page .footer .footer__container-link .options__item:focus {
+  color: rgb(202, 167, 91);
 }
 body.dark-page .footer .footer__container-link .list-link__message img {
+  transition: all 0.3s linear;
   filter: brightness(1.4);
 }
 body.dark-page .footer .footer__container-link .list-link__message:hover, body.dark-page .footer .footer__container-link .list-link__message:focus {
