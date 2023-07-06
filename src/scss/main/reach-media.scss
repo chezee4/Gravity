@@ -3,7 +3,6 @@
   display: flex;
   padding-left: 25px;
 
-
   &__content {
     position: relative;
     display: flex;
@@ -94,6 +93,9 @@
     width: 100%;
     padding-left: 0;
     justify-content: center;
+    &__title {
+      margin-top: 40px;
+    }
     &__content {
       width: inherit;
       text-align: center;
@@ -131,7 +133,7 @@
 
     &__video {
       position: static;
-      width: 100%;
+      width: 95%;
       min-height: 200px;
       margin-bottom: 20px;
     }

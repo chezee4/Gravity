@@ -99,7 +99,8 @@
       transition: all 0.3s linear;
       cursor: pointer;
       padding: 12px 21px;
-      &:hover,&:focus{
+      &:hover,
+      &:focus {
         background-color: #4436e2;
       }
     }
@@ -145,6 +146,9 @@
 }
 @media (max-width: 480px) {
   .works {
+    &__marcker {
+      margin-bottom: 30px;
+    }
     &__title {
       font-size: 32px;
     }
@@ -154,13 +158,21 @@
         row-gap: 15px;
         &__item {
           font-size: 12px;
-          letter-spacing: 2px;
+          letter-spacing: 0;
         }
       }
     }
     &__items {
       grid-template-columns: repeat(auto-fit, 300px);
       grid-auto-rows: 350px;
+    }
+  }
+}
+@media (max-width: 320px) {
+  .works {
+    &__items {
+      grid-template-columns: repeat(auto-fit, 260px);
+      grid-auto-rows: 300px;
     }
   }
 }

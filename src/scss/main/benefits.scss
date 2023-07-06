@@ -72,7 +72,7 @@
   }
 }
 @media (max-width: 1170px) {
-  .benefits{
+  .benefits {
     margin-bottom: 100px;
     &__photos-container {
       height: 100%;
@@ -81,7 +81,6 @@
   .--photo-transform {
     display: none !important;
   }
- 
 }
 @media (max-width: 991px) {
   .benefits {
@@ -129,6 +128,7 @@
       height: 100%;
       width: 100%;
       order: 0;
+      padding-inline: 10px;
     }
     &__title {
       font-size: 38px;
@@ -177,6 +177,13 @@
     }
     &__photos-container img {
       min-height: 300px;
+    }
+  }
+}
+@media (max-width: 320px) {
+  .benefits {
+    &__photos-container img {
+      min-height: 250px;
     }
   }
 }

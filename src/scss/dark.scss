@@ -1,4 +1,5 @@
 $bg-color: #111111;
+$bg-footer: #151515;
 $text-color: #545964;
 $text-light: #5b606b;
 $subtext-color: #6a6f78;
@@ -170,6 +171,68 @@ body.dark-page {
       &__company {
         color: $text-light;
         opacity: 0.5;
+      }
+    }
+  }
+  .cooperation {
+    &__title {
+      color: $text-color;
+    }
+    &__marcker {
+      color: $text-color;
+      opacity: 0.4;
+    }
+    &__subtitle {
+      color: $subtext-color;
+    }
+    &__companies-logos {
+      .company-logo__container {
+        img {
+          filter: invert(0.7);
+        }
+      }
+    }
+  }
+  .footer {
+    background-color: $bg-footer;
+    &__logo {
+      img {
+        filter: brightness(2);
+      }
+    }
+    &__form {
+      .form__input {
+        color: $text-color;
+      }
+
+      .form__button {
+        color: $subtext-color;
+      }
+    }
+    .menu {
+      &__item {
+        color: $subtext-color;
+      }
+    }
+    .footer__container-link {
+      .options {
+        &__item {
+          color: $subtext-color;
+        }
+      }
+      .list-link {
+        &__message {
+          img {
+            filter: brightness(1.4);
+          }
+          &:hover,
+          &:focus {
+            filter: none;
+            img {
+              filter: brightness(5);
+            }
+          }
+        }
       }
     }
   }

@@ -1,0 +1,104 @@
+.cooperation {
+  width: 100%;
+  &__container {
+    margin-top: 170px;
+    padding-inline: 10px;
+  }
+  &__text {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px 100px;
+    flex-wrap: wrap;
+  }
+  &__title {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: -1px;
+  }
+  &__container-subtitle {
+    max-width: 445px;
+  }
+  &__subtitle {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.55;
+    opacity: 0.699999988079071;
+  }
+  &__marcker {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.7;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  }
+  &__companies-logos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 37px 55px;
+    margin-top: 55px;
+    .company-logo__container {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      img {
+        opacity: 0.15;
+        transition: all 0.35s linear;
+      }
+      &:hover img,
+      &:focus img {
+        opacity: 1;
+      }
+    }
+  }
+}
+@media (max-width: 991px) {
+  .cooperation {
+    &__container {
+      margin-top: 120px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .cooperation {
+    &__container {
+      margin-top: 80px;
+    }
+    &__title {
+      font-size: 32px;
+    }
+    &__container-subtitle {
+      max-width: 445px;
+    }
+    &__subtitle {
+      font-size: 14px;
+    }
+    &__marcker {
+      font-size: 10px;
+      letter-spacing: 2px;
+    }
+    &__companies-logos {
+      justify-content: space-evenly;
+    }
+  }
+}
+@media (max-width: 480px) {
+  .cooperation {
+    &__container {
+      margin-top: 60px;
+    }
+    &__companies-logos {
+      .company-logo__container {
+        max-width: 60px;
+        max-height: 50px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
