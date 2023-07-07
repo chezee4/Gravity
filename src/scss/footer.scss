@@ -24,7 +24,7 @@
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 30px 60px;
+      gap: 30px 70px;
     }
     &__item {
       font-size: 18px;
@@ -125,6 +125,11 @@
       margin-top: 20px;
     }
     .menu {
+      &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px 44px;
+      }
       &__item {
         font-size: 16px;
       }

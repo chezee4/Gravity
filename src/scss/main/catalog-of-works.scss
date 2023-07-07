@@ -124,7 +124,7 @@
         margin-bottom: 20px;
       }
       .works__button {
-        letter-spacing: 2px;
+        letter-spacing: 1px;
         padding: 10px 15px;
       }
     }
@@ -163,16 +163,16 @@
       }
     }
     &__items {
-      grid-template-columns: repeat(auto-fit, 300px);
-      grid-auto-rows: 350px;
+      grid-template-columns: repeat(auto-fit, 280px);
+      grid-auto-rows: 300px;
     }
   }
 }
 @media (max-width: 320px) {
   .works {
     &__items {
-      grid-template-columns: repeat(auto-fit, 260px);
-      grid-auto-rows: 300px;
+      grid-template-columns: repeat(auto-fit, 240px);
+      grid-auto-rows: 250px;
     }
   }
 }
